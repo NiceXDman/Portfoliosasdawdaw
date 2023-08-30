@@ -1,0 +1,184 @@
+body{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed ;
+    background-size: cover;
+    overflow-y: hidden;
+    list-style: none;
+}
+
+@keyframes slidein{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(-12%);
+    }
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.mainbox1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 80vh;
+    width: 100%;
+    background-color: transparent;
+
+    animation:running slidein;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+    
+}
+.yt{
+    text-decoration:none ;
+    color: rgb(36, 36, 36);
+    font-family: 'Oswald';
+    font-size: 60px;
+    background-color: rgb(82, 201, 175);
+    border: 3px solid rgb(82, 201, 175) ;
+    border-radius: 100px;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: all 0.3s;
+
+    animation:running slidein;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 3.01s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.yt:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(82, 201, 175);
+}
+.ig{
+    text-decoration:none ;
+    color: rgb(36, 36, 36);
+    font-family: 'Oswald';
+    font-size: 60px;
+    background-color: rgb(82, 201, 175);
+    border: 3px solid rgb(82, 201, 175) ;
+    border-radius: 100px;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: all 0.3s;
+}
+.ig:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(82, 201, 175);
+}
+.email{
+    text-decoration:none ;
+    color: rgb(36, 36, 36);
+    font-family: 'Oswald';
+    font-size: 60px;
+    background-color: rgb(82, 201, 175);
+    border: 3px solid rgb(82, 201, 175) ;
+    border-radius: 100px;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition:all 0.3s;
+}
+.email:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(82, 201, 175);
+}
+.home{
+    text-decoration:none ;
+    color: rgb(82, 201, 175);
+    font-family: 'Oswald';
+    font-size: 20px;
+    background-color: rgb(36, 36, 36);
+    border: 3px solid rgb(82, 201, 175) ;
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition:all 0.3s;
+    margin-top:10px ;
+    font-weight: bold;
+    z-index: 1;
+}
+.home:hover{
+    color:rgb(36, 36, 36);
+    background-color:rgb(82, 201, 175) ;
+}
+.homebox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 40px;
+    z-index: 1;
+    opacity: 0;
+
+    animation:running opacity;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.nxdm{
+    margin-right: 3%;
+    transform: translateY(-60px);
+    color:rgb(82, 201, 175) ;
+    font-size: 60px;
+    font-family: 'Tektur';
+    transition: all 0.3s;
+}
+
+@media screen and (max-width:640px){
+    .mainbox1{
+        display: none;
+    }
+    .homebox{
+        display: none;
+    }
+}
+@media screen and (max-height:640px){
+    .mainbox1{
+        display: none;
+    }
+    .homebox{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .yt{
+        font-size: 40px;
+        padding: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .ig{
+        font-size: 40px;
+        padding: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .email{
+        font-size: 40px;
+        padding: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }    
+}
+

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+body{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed ;
+    background-size: cover;
+    overflow-y: hidden;
+}
+@keyframes slidein{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes pop{
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.mainbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+}
+p{
+    font-size: 200%;
+    font-family: 'Oswald';
+    background-color:rgb(36, 36, 36) ;
+    padding: 200px;
+    border: 2px solid rgb(82, 201, 175);
+    border-bottom-left-radius:300px ;
+    border-bottom-right-radius: 300px;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 50px;
+    color: white;
+}
+.box1{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-items: center ;
+
+    animation: running slidein ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.box2{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-items: center ;
+    list-style: none;
+    transition: all 0.1s;
+    opacity: 0;
+
+    animation: running pop ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.cm{
+    text-decoration: none;
+    color:rgb(82, 201, 175);
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(36, 36, 36);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    border: 2px solid rgb(82, 201, 175);
+    border-radius: 1000px;
+    transition: all 0.3s;
+}
+.cm:hover{
+    background-color: rgb(82, 201, 175);
+    color: rgb(36, 36, 36);
+}
+.box2:active{
+    transform: scale(0.95);
+}
+
+@media screen and (max-width:640px){
+    .mainbox1{
+        display: none;
+    }
+}
+@media screen and (max-height:640px){
+    .mainbox1{
+        display: none;
+    }
+}
